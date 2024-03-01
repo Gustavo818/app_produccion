@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-02-29 09:31:38.524346",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_mqab",
+  "prm_familia",
+  "column_break_cvvj",
+  "prm_grupo",
+  "column_break_qcey",
+  "prm_subgrupo",
+  "section_break_fxuo",
+  "prod_nombre",
+  "prn_unidad",
+  "section_break_gciu",
+  "prod_codigo",
+  "prod_abreviacion",
+  "prod_fecha",
+  "column_break_maqa",
+  "prod_deshabilitar",
+  "prod_caduca",
+  "pod_activofijo",
+  "proveedor_producto_section",
+  "pro_nombrelocalcomercial",
+  "pro_contacto",
+  "pro_telefono",
+  "precio_tab",
+  "prod_aplicariva",
+  "prod_procentajeiva",
+  "column_break_iyew",
+  "prod_costounitario",
+  "prod_valoriva",
+  "prod_costototal"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Registro",
+   "options": "REGISTRO-.YYYY.-"
+  },
+  {
+   "fieldname": "prod_nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Producto",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "prm_familia",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Grupo Familia",
+   "options": "prm_familia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prm_grupo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Grupo",
+   "options": "prm_grupo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mqab",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cvvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fxuo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qcey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prod_codigo",
+   "fieldtype": "Data",
+   "label": "C\u00f3digo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prod_abreviacion",
+   "fieldtype": "Data",
+   "label": "Abreviaci\u00f3n"
+  },
+  {
+   "fieldname": "prod_fecha",
+   "fieldtype": "Date",
+   "label": "Fecha Registro",
+   "options": "dateTime()"
+  },
+  {
+   "fieldname": "prm_subgrupo",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sub Grupo",
+   "options": "prn_subgrupo"
+  },
+  {
+   "fieldname": "prn_unidad",
+   "fieldtype": "Link",
+   "label": "unidad",
+   "options": "prn_unidad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gciu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_maqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_deshabilitar",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Deshabilitado"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_caduca",
+   "fieldtype": "Check",
+   "label": "Producto Caduca"
+  },
+  {
+   "default": "0",
+   "fieldname": "pod_activofijo",
+   "fieldtype": "Check",
+   "label": "Activo Fijo"
+  },
+  {
+   "fieldname": "proveedor_producto_section",
+   "fieldtype": "Section Break",
+   "label": "Proveedor Producto"
+  },
+  {
+   "fieldname": "pro_contacto",
+   "fieldtype": "Data",
+   "label": "Contato"
+  },
+  {
+   "fieldname": "pro_telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono"
+  },
+  {
+   "fieldname": "precio_tab",
+   "fieldtype": "Tab Break",
+   "label": "Precio"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_aplicariva",
+   "fieldtype": "Check",
+   "label": "Aplicar IVA"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_procentajeiva",
+   "fieldtype": "Currency",
+   "label": "Porcentaje Iva",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iyew",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_costounitario",
+   "fieldtype": "Currency",
+   "label": "Costo Unitario",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_valoriva",
+   "fieldtype": "Currency",
+   "label": "Valor Iva",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_costototal",
+   "fieldtype": "Currency",
+   "label": "Costo Total",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pro_nombrelocalcomercial",
+   "fieldtype": "Data",
+   "label": "Nombre Local Comercial"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-29 16:36:18.843501",
+ "modified_by": "Administrator",
+ "module": "mod_datos",
+ "name": "dat_producto",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "prod_nombre"
+}
