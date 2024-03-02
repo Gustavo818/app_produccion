@@ -21,20 +21,20 @@
   "prod_abreviacion",
   "prod_fecha",
   "column_break_maqa",
-  "prod_deshabilitar",
+  "enabled",
   "prod_caduca",
   "pod_activofijo",
-  "proveedor_producto_section",
-  "pro_nombrelocalcomercial",
-  "pro_contacto",
-  "pro_telefono",
   "precio_tab",
+  "linea",
   "prod_aplicariva",
   "prod_procentajeiva",
   "column_break_iyew",
   "prod_costounitario",
   "prod_valoriva",
-  "prod_costototal"
+  "prod_costototal",
+  "proveedor_tab",
+  "proveedor_producto_section",
+  "dat_producto_proveedor"
  ],
  "fields": [
   {
@@ -127,13 +127,6 @@
   },
   {
    "default": "0",
-   "fieldname": "prod_deshabilitar",
-   "fieldtype": "Check",
-   "in_standard_filter": 1,
-   "label": "Deshabilitado"
-  },
-  {
-   "default": "0",
    "fieldname": "prod_caduca",
    "fieldtype": "Check",
    "label": "Producto Caduca"
@@ -146,18 +139,7 @@
   },
   {
    "fieldname": "proveedor_producto_section",
-   "fieldtype": "Section Break",
-   "label": "Proveedor Producto"
-  },
-  {
-   "fieldname": "pro_contacto",
-   "fieldtype": "Data",
-   "label": "Contato"
-  },
-  {
-   "fieldname": "pro_telefono",
-   "fieldtype": "Data",
-   "label": "Tel\u00e9fono"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "precio_tab",
@@ -173,8 +155,8 @@
   {
    "default": "0",
    "fieldname": "prod_procentajeiva",
-   "fieldtype": "Currency",
-   "label": "Porcentaje Iva",
+   "fieldtype": "Float",
+   "label": "Porcentaje IVA",
    "non_negative": 1,
    "precision": "2",
    "read_only": 1
@@ -195,7 +177,7 @@
    "default": "0",
    "fieldname": "prod_valoriva",
    "fieldtype": "Currency",
-   "label": "Valor Iva",
+   "label": "Valor IVA",
    "non_negative": 1,
    "read_only": 1
   },
@@ -209,15 +191,34 @@
    "read_only": 1
   },
   {
-   "fieldname": "pro_nombrelocalcomercial",
-   "fieldtype": "Data",
-   "label": "Nombre Local Comercial"
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Habilitado"
+  },
+  {
+   "fieldname": "proveedor_tab",
+   "fieldtype": "Tab Break",
+   "label": "Proveedor"
+  },
+  {
+   "fieldname": "linea",
+   "fieldtype": "HTML",
+   "options": "<hr>"
+  },
+  {
+   "fieldname": "dat_producto_proveedor",
+   "fieldtype": "Table",
+   "label": "Proveedor Producto",
+   "options": "dat_producto_proveedor"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-29 16:36:18.843501",
+ "modified": "2024-03-01 19:08:05.650186",
  "modified_by": "Administrator",
  "module": "mod_datos",
  "name": "dat_producto",

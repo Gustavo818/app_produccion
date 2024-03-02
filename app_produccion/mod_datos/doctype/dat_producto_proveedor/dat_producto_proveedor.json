@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:dat_provnombrelocalcomercial",
+ "creation": "2024-03-01 18:57:45.495006",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dat_provnombrelocalcomercial",
+  "dat_provcontacto",
+  "dat_provtelefono"
+ ],
+ "fields": [
+  {
+   "fieldname": "dat_provnombrelocalcomercial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Local Comercial",
+   "unique": 1
+  },
+  {
+   "fieldname": "dat_provcontacto",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contacto"
+  },
+  {
+   "fieldname": "dat_provtelefono",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Telefono"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-01 19:04:47.343378",
+ "modified_by": "Administrator",
+ "module": "mod_datos",
+ "name": "dat_producto_proveedor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
