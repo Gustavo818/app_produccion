@@ -16,6 +16,8 @@
   "section_break_fxuo",
   "prod_nombre",
   "prn_unidad",
+  "column_break_jjrm",
+  "prod_imagen",
   "section_break_gciu",
   "prod_codigo",
   "prod_abreviacion",
@@ -97,10 +99,10 @@
    "label": "Abreviaci\u00f3n"
   },
   {
+   "default": "Today",
    "fieldname": "prod_fecha",
    "fieldtype": "Date",
-   "label": "Fecha Registro",
-   "options": "dateTime()"
+   "label": "Fecha Registro"
   },
   {
    "fieldname": "prm_subgrupo",
@@ -213,12 +215,21 @@
    "fieldtype": "Table",
    "label": "Proveedor Producto",
    "options": "dat_producto_proveedor"
+  },
+  {
+   "fieldname": "prod_imagen",
+   "fieldtype": "Attach Image",
+   "label": "Imagen"
+  },
+  {
+   "fieldname": "column_break_jjrm",
+   "fieldtype": "Column Break"
   }
  ],
- "hide_toolbar": 1,
+ "image_field": "prod_imagen",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-01 19:08:05.650186",
+ "modified": "2024-03-06 19:41:05.679347",
  "modified_by": "Administrator",
  "module": "mod_datos",
  "name": "dat_producto",

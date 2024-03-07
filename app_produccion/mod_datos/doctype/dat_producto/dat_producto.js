@@ -21,7 +21,7 @@ function AplicarIva(frm){
 	let prod_costototal = frm.doc.prod_costounitario ;
 
 	if (frm.doc.prod_aplicariva){
-		prod_valoriva = frm.doc.prod_costounitario * frm.doc.prod_aplicariva / 100;
+		prod_valoriva = frm.doc.prod_costounitario * frm.doc.prod_procentajeiva / 100;
 		prod_costototal = frm.doc.prod_costounitario + prod_valoriva;
 	}
 	
